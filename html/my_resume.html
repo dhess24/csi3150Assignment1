@@ -10,82 +10,88 @@
       href="../assets/img/favicon.ico"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="../css/portfolio_style.css" />
   </head>
   <body>
     <header>
-      <!--The heading of the page should be as follows - "Your Name - Resume"-->
-      <h2>Drake Hess - Resume</h2>
       <!--It should also contain the navigation bar listing the three pages, as you have for your home page-->
       <nav>
+        <img src="../assets/img/favicon.ico" alt="" id="icon" />
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="./my_resume.html">Resume</a></li>
           <li><a href="./my_fun_facts.html">Fun Facts</a></li>
         </ul>
+        <button>Hire Me</button>
       </nav>
       <!--The page should have a sub heading listing your contact information, like your address, email, and telephone no. [No need to list your actual info if you don’t want to or plan to use this protofolio website for your personal use. You can use placeholder information for the sake of the assignment]-->
-      <address>
-        Address: XXXXX
-        <br />
-        Email: <a href="mailto:dhess@oakland.edu">dhess@oakland.edu</a>
-        <br />
-        Telephone: XXX-XXX-XXXX
-      </address>
     </header>
     <main>
-      <!--The next content should be first section of your resume. This should be called "Objective" and it should have a brief description about your professional objective (about one or two sentences). For example, "Seeking an internship for summer 2024 as a front end or full stack web developer."-->
-      <section>
-        <h4>Objective</h4>
-        <p>
-          Seeking an internship for winter 2025 as a front end or full stack web
-          developer.
-        </p>
-      </section>
-      <!--The next content should be your "professional experience". The content should be listed in subsections with each sub-section listing a specific experience. The heading of the subsection should be as follows - "Start date -- End Date, Job Role, Company Name, Location". After each sub-section, you should give a brief description of your job role in one to two sentences.-->
-      <section>
-        <h4>Professional Experience</h4>
-        <!--I have no professional experience and do not want to make it up, so I just made a placeholder-->
-        <section>
-          <h5>Start date -- End Date, Job Role, Company Name, Location</h5>
-          <p>Brief Description</p>
-        </section>
-      </section>
-      <!--The next content should be your "educational experiences". This should be represented as a tabular content with 2 columns. The first column should be called "start--end" and should outline the start year and (expected) end-year. In addition, the second column should be titled "Degree" and should outline name of degree, place, and location.-->
-      <section>
-        <h4>Educational Experiences</h4>
-        <table>
-          <thead>
-            <tr>
-              <th>Start--End</th>
-              <th>Degree</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2016--2020</td>
-              <td>Highschool, Adams Highschool, Michigan</td>
-            </tr>
-            <tr>
-              <td>2020--2025</td>
-              <td>
-                Bachelors in Computer Science, Oakland University, Michigan
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <!--The next content should be your "Extracurricular Interests and Hobbies" and should have a one or two sentence description outlining your extra-curricular interests and hobbies like sports, reading, cooking, singing, etc.-->
-      <section>
-        <h4>Extracurricular Interests and Hobbies</h4>
-        <p>
-          My hobbies are playing videogames, modding videogames, reading,
-          cooking, and coding
-        </p>
-      </section>
+      <div class="wireframing-container">
+        <div class="wireframing-title-container">
+          <h2 class="wireframing-title">Drake Hess - Resume</h2>
+          <address>
+            Address: XXXXX
+            <br />
+            Email: <a href="mailto:dhess@oakland.edu">dhess@oakland.edu</a>
+            <br />
+            Telephone: XXX-XXX-XXXX
+          </address>
+        </div>
+        <div class="wireframing-content-container">
+          <section class="content-section">
+            <h4>Objective</h4>
+            <p>
+              Seeking an internship for winter 2025 as a front end or full stack
+              web developer.
+            </p>
+          </section>
+          <!--The next content should be your "professional experience". The content should be listed in subsections with each sub-section listing a specific experience. The heading of the subsection should be as follows - "Start date -- End Date, Job Role, Company Name, Location". After each sub-section, you should give a brief description of your job role in one to two sentences.-->
+          <section class="content-section">
+            <h4>Professional Experience</h4>
+            <!--I have no professional experience and do not want to make it up, so I just made a placeholder-->
+            <section>
+              <h5>Start date -- End Date, Job Role, Company Name, Location</h5>
+              <p>Brief Description</p>
+            </section>
+          </section>
+          <!--The next content should be your "educational experiences". This should be represented as a tabular content with 2 columns. The first column should be called "start--end" and should outline the start year and (expected) end-year. In addition, the second column should be titled "Degree" and should outline name of degree, place, and location.-->
+          <section class="content-section">
+            <h4>Educational Experiences</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th>Start--End</th>
+                  <th>Degree</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2016--2020</td>
+                  <td>Highschool, Adams Highschool, Michigan</td>
+                </tr>
+                <tr>
+                  <td>2020--2025</td>
+                  <td>
+                    Bachelors in Computer Science, Oakland University, Michigan
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <!--The next content should be your "Extracurricular Interests and Hobbies" and should have a one or two sentence description outlining your extra-curricular interests and hobbies like sports, reading, cooking, singing, etc.-->
+          <section class="content-section">
+            <h4>Extracurricular Interests and Hobbies</h4>
+            <p>
+              My hobbies are playing videogames, modding videogames, reading,
+              cooking, and coding
+            </p>
+          </section>
+        </div>
+      </div>
     </main>
-    <!--At the bottom of the page, you should specify your copyright information; your email; any other social media sites that you want people to know of. This portion of the content should be separated from rest of the content using a horizontal rule/line that should be visible on the page.-->
+    <hr />
     <footer>
-      <hr />
       <p>Copyright Information</p>
       <a href="mailto:dhess@oakland.edu">My Email</a>
     </footer>

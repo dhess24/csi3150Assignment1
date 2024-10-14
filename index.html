@@ -5,48 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--The website [and individual pages] must have a title and favicon-->
     <title>Drake Hess Portfolio</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/portfolio_style.css" />
   </head>
   <body>
-    <!--The page should have a heading that should indicate your name and that this is your portfolio website.-->
     <header>
-      <h2>Drake Hess Portfolio</h2>
-      <!--It should also contain the navigation bar listing the three pages-->
       <nav>
+        <img src="./assets/img/favicon.ico" alt="" id="icon" />
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./html/my_resume.html">Resume</a></li>
           <li><a href="./html/my_fun_facts.html">Fun Facts</a></li>
         </ul>
+        <button>Hire Me</button>
       </nav>
     </header>
     <main>
-      <section>
-        <!--It should have an image of you [or an avatar image of you]-->
+      <section id="hero-section">
+        <article id="hero-section-content">
+          <h2 id="hero-section-title">Drake Hess Portfolio</h2>
+          <blockquote>"I think, therefore I am." - René Descartes</blockquote>
+          <p>
+            My name is Drake Hess. I'm from Rochester Hills, Michigan, and I am
+            22 years old. Currently, I am a student at Oakland University
+            studying Computer Science. To learn more about me, check out the
+            other pages.
+          </p>
+          <label for="graduation-progress">Degree Progress:</label>
+          <progress id="graduation-progress" value="117" max="128">
+            91%
+          </progress>
+        </article>
         <img
           src="./assets/img/picture of me.jpg"
           alt="Image of me"
           width="462px"
           height="517px"
+          style="border-radius: 5px"
         />
-        <!--Below the image, you should give a quotation from some personality that resonates with you. This quote must be indented in the page without using any styling rules-->
-        <blockquote>"I think, therefore I am." - René Descartes</blockquote>
       </section>
-      <!--Then, the page should have a brief paragraph or two introducing yourself to your audience. This is sometimes called an elevator pitch. Tell them who you are where are you from (little bit of your background), what is your current professional affiliation, what are your prior professional and what are your future professional interest. This content should be ended by linking to your other two pages by stating something like - "to know more about me check out my Page2 and Page3".-->
-      <article>
-        <p>
-          My name is Drake Hess. I'm from Rochester Hills, Michigan, and I am 22
-          years old. Currently, I am a student at Oakland University studying
-          Computer Science. To learn more about me, check out the other pages.
-        </p>
-      </article>
-      <!--A progress bar or a meter bar showing how many degree credits you have taken/away from graduation. (For example, you have taken 100 course credits out of 130 to get a B.S. degree – and represent this using a progress bar)[This is an applied task, I want you to you all to research and implement this.]-->
-      <label for="graduation-progress">Degree Progress:</label>
-      <progress id="graduation-progress" value="117" max="128">91%</progress>
     </main>
-    <!--At the bottom of the page, you should specify your copyright information; your email; any other social media sites that you want people to know of. This portion of the content should be separated from rest of the content using a horizontal rule/line that should be visible on the page-->
+    <hr />
     <footer>
-      <hr />
       <p>Copyright Information</p>
       <a href="mailto:dhess@oakland.edu">My Email</a>
     </footer>
